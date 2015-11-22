@@ -1,0 +1,150 @@
+<style>
+.avatar{
+position: absolute;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.receipt-money{
+	float:right;
+}
+.border-bot{
+	border-bottom: 1px rgb(187, 187, 187) solid;
+}
+.upper-border-bot{
+	border-bottom: 1px rgb(187, 187, 187) solid;
+	margin-bottom: 1px;
+	padding-bottom:1px;
+}
+.nothing{
+
+}
+.last-child-clean :last-child{
+	border-bottom:none;
+}
+.last-child-none :last-child{
+	display:none;
+}
+.last-child-display :last-child{
+	display:inline;
+}
+
+.number-picker{
+	float:left;
+	width:30vw
+}
+.controll-button{
+	font-size:6.52vw;
+	color:#ff6f42;	
+	float:right;
+	margin-top:3vw;
+	margin-right:4vw;
+}
+.minus-controll-button{
+	margin-right:0vw;
+}
+.touchable{
+	width:13.04vw;
+	height:13.04vw;;
+	float:right;
+}
+.receipt-row{
+	font-size:5.43vw;
+	padding-top:3.8vw;
+	padding-bottom:3.8vw;
+}
+.popup-head {
+  display:none;
+}
+.popup-buttons{
+  background-color: white;
+  }
+</style>
+<div class="container">
+<ion-view view-title="Review" class="order-html">
+  <ion-nav-buttons side="right">
+    <a  nav-clear  ng-click="clickSelectPayment();" class="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  </ion-nav-buttons> 
+  <ion-content style="top:20.2vw; height: auto;" >
+	<div class="list card last-child-clean">
+		<div ng-repeat="date in orderedDates  = ($root.OrderManager.getDates())"  class="upper-border-bot last-child-none">
+			<div class="item" style="height:15.21vw;font-size: 4.35vw;padding-left:4.35vw;padding-top:4.35">{{$root.getShortDate(date)}}</div>
+			<div class="item item-divider last-child-display" style="border: none;padding:0px;height:21.84vw;font-size:4.35vw;background:white;font-weight:normal;" ng-repeat-start="item in filteredItems  = ($root.OrderManager.orders[date] | filter: greaterThan('amount', 0))" >
+				<img  src="{{item.img1}}" style="border-radius: 50%;position:absolute;height:15.22vw;width:15.22vw; margin-top:3.31vw;margin-left:2.17vw;"/> 
+				<span style='position:absolute;text-decoration: line-through;margin-left:22.01vw;margin-top:4.43vw;'>${{item.originalPrice.toFixed(2)}}</span> 
+				<span style='position:absolute;margin-left:22.01vw;margin-top:11.68vw;color:#4CAF50;'>${{item.price}}</span> 
+				<div style="position:absolute;margin-left:36.14vw;margin-top:4.43vw;">
+					<span style="color:#F9690E;">{{item.amount}}</span>
+					<span>{{item.name}}</span>
+				</div>
+				<div style='position:absolute;margin-top:11.68vw;margin-left:36.14vw;'>
+					<span>Item Total ${{roundToCent(item.price*item.amount).toFixed(2)}}</span>
+				</div>
+				
+				<number-picker style="float:right;  margin-top: 4.26vw;"  value="item.amount" storage="item.storage" class="number-picker"></number-picker>
+				
+			</div>
+			<div  ng-repeat-end style="position:absolute;height:1px;background-color:rgb(187, 187, 187); width:75vw;margin-left:20.01vw;z-index:100;">
+			</div>
+		</div>
+	</div>
+	<div class="list card" style="font-size:5.43vw; font-weight:bold; background-color:white;">
+		<div class="item item-divider" style="background-color: white;padding:0 4.34vw;">
+			<div class="receipt-row">
+					<span>Subtotal</span>
+					<span class="receipt-money"> 
+					${{ $root.OrderManager.getOrderPrice().subTotal.toFixed(2)}}
+					</span>
+			</div>
+			<div class="receipt-row">
+					<span>Discount Saving</span> 
+					<span class="receipt-money" style="color:#E43834;font-weight:bold;">(-${{ $root.OrderManager.getOrderPrice().discount.toFixed(2)}})</span>
+				
+			</div>
+			<div ng-hide="$root.OrderManager.freeLunchList.length" class="receipt-row">
+					<span>No Free Lunch Available</span>
+					<span class="receipt-money">${{ $root.OrderManager.getOrderPrice().freeLunch.toFixed(2)}}</span>
+				
+			</div>
+			<div class="receipt-row" ng-show="$root.OrderManager.freeLunchList.length">
+					<span ng-click="showPopup()" ng-show="$root.OrderManager.getOrderPrice().freeLunch==0" style="color:#2F3E9E; font-weight:bold;">
+						<span>{{$root.OrderManager.freeLunchList.length}}</span>
+						<span>Free Lunch Available</span>
+					</span>
+					<span class="receipt-money" ng-show="$root.OrderManager.getOrderPrice().freeLunch==0" style="color:#DFDFDF; font-weight:bold;">${{ $root.OrderManager.getOrderPrice().freeLunch.toFixed(2)}}</span>
+
+					<span ng-click="showPopup()" ng-show="$root.OrderManager.getOrderPrice().freeLunch!=0" style="color:#2F3E9E; font-weight:bold;">
+						<span>1 Free Lunch Applied</span>
+					</span>
+					<span class="receipt-money"  ng-show="$root.OrderManager.getOrderPrice().freeLunch!=0" style="color:#E43834;font-weight:bold;">(-${{ $root.OrderManager.getOrderPrice().freeLunch.toFixed(2)}})</span>
+			</div>
+			<div class="receipt-row border-bot"style="clear:both;">
+					<span>Tax</span>
+					<span class="receipt-money">${{ $root.OrderManager.getOrderPrice().tax.toFixed(2)}}</span>
+			</div>
+			<div class="receipt-row">
+				<span>Total</span> 
+				<span class="receipt-money">${{ $root.OrderManager.getOrderPrice().total.toFixed(2)}}</span>
+			</div>
+		</div>
+	</div>
+			<style>
+			.button:after {
+    position: absolute;
+    top: 0px; 
+    right: -6px;
+    bottom: 0px;
+    margin:0px;
+    padding:0px;
+    left: -6px;
+    content: ' ';
+}
+			</style>
+			<div  ng-click="clickSelectPayment();" class="button button-full button-balanced" style="  border-radius: 0px;border:none;height: 12.214vh;font-size: 7vw; padding-top: 9px;margin:0px;">
+				PAY
+			</div>
+	
+</ion-view>
+</div>

@@ -1,0 +1,62 @@
+<style>
+.item-complex.item-icon-left .item-content {
+  font-size: 3vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-left: 20vw;
+}
+</style>
+<ion-side-menus enable-menu-with-back-views="false" ng-controller="MenuCtrl">
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="bar-balanced">
+            <ion-nav-back-button class="button-clear">
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" width="$root.window.innerWidth*0.8">
+        <ion-content>
+        	<div class="menu-head">
+	        	 <i class="icon ion-android-person" style="font-size: 10vw;"></i>
+	        	 <div class="profile" style="padding-top:1vh;">
+	        	 	<div class="name" style="font-size:4.35vw;">
+	        	 		{{userName}}
+	        	 	</div>
+	        	 	<ion-item nav-clear menu-close class="my-account" style="font-size:4.35vw;color:#2F3E9E;" href="#/app/profile">
+	                    My Account
+	        	 	</ion-item>
+	        	 </div>
+	        </div>
+            <ion-list>
+            	
+            	<ion-item nav-clear menu-close class="item item-icon-left" href="#/app/home">
+                    <i class="icon ion-android-home" style="font-size:4.35vw;padding-top: 4vh;padding-bottom: 4vh;"></i>Home
+                </ion-item>
+                <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/payment">
+                    <i class="icon ion-card"></i>Payment
+                </ion-item>
+                <!-- 
+                <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/historyOrder">
+                    <i class="icon ion-coffee"></i>Order History
+                </ion-item>
+                 -->
+                
+                <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/freeLunch">
+                    <i class="icon ion-android-share-alt" style="font-size:4.35vw;padding-top: 4vh;padding-bottom: 4vh;"></i>Share Free Lunches
+                </ion-item>
+                <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/promoCode">
+                    <i class="icon ion-code" style="font-size:4.35vw;padding-top: 4vh;padding-bottom: 4vh;"></i>Input Promo Code
+                </ion-item>
+                <ion-item nav-clear menu-close class="item item-icon-left" href="#/app/help">
+                    <i class="icon ion-help-circled" style="font-size:4.35vw;padding-top: 4vh;padding-bottom: 4vh;"></i>Help
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,35 @@
+<style>
+.invite-button{
+	padding:0px; margin:0px;
+}
+</style>
+<div class="container" >
+<ion-view view-title="Share Free Lunches" >
+  <ion-content style="top: 0px; bottom: 60px; height: auto;" has-bouncing="false">
+  <img style="position:absolute;margin-top:25vw; width:40vw;margin-left:30vw;" src='img/logo.png'>
+	<div style="position:absolute;font-size:6.52vw;margin-top:52.10vw;width:100vw;text-align: center;">
+				GET FREE LUNCHES
+			</div>
+			<div style="position:absolute;width:100vw;text-align: center;margin-top:64.60vw; font-size:4.35vw;">
+				Send friends a free lunch and you'll <br/>  get one too, worth $10.
+			</div>
+			<div style="position:absolute;width:100vw;text-align: center;margin-top:86.35vw; font-size:5.43vw; color:#747474;">
+				SEND YOUR PROMO CODE
+			</div>
+			<div style="position:absolute;width:100vw;text-align: center;margin-top:93.96vw; font-size:6.52vw;font-weight:bold;">
+				{{userCode}}
+			</div>
+		</div>
+	</div>
+	<!--
+	<a  href="#" class="button button-block  button-balanced invite-button" ng-click="sendEmail();" style="position:absolute;bottom:12.214vh;height:12.214vh; z-index: 100;width:100vw;padding:0px; margin:0px; border-radius: 0px;
+">
+		<i class="ion-android-mail invite-button"  style="margin-left:14.13vw;margin-top:2.26vw;font-size: 11.54vw;float:left;"></i> <div style="position:absolute;margin-top:2.26vw;margin-left:34.78vw;font-size: 6.04vw;">EMAIL INVITE</div>
+	</a>-->
+	<a  href="#" class="button button-block  button-assertive invite-button" ng-click="sendSms();" style="position:absolute;bottom:0vw;height:12.214vh; z-index: 100;width:100vw;padding:0px; margin:0px; border-radius: 0px;border: none; background-color: #FF6542;
+">
+		<i class="ion-android-textsms invite-button" style="margin-left:14.60vw;margin-top:3.26vw;font-size: 13.04vw;float:left;"></i> <div style="position:absolute;margin-top:3.26vw;margin-left:36.78vw;font-size: 6.04vw;">TEXT INVITE</div>
+	</a>
+	</ion-content>
+</ion-view>
+</div>

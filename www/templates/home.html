@@ -1,0 +1,38 @@
+<ion-view view-title="Home" class="home" style="background-color: #FAFAFA;">
+      
+<ion-content style="top:20.2vw; bottom:12.214vw; height:auto;color:#414141;" has-bouncing="true">
+      	
+
+<ion-slide-box on-slide-changed="slideHasChanged($index)"  show-pager="true"  on-slide-changed="slideChange();" >
+	<ion-slide ng-repeat="item in homepageList | filter: { category: 'top' }" style="text-align: center;" >
+		  	
+		  	<div class="card upper" ng-click="slideClick(item.destId);">
+		    	<img style="width:100%;" src="{{item.url}}" />
+		    	<div class="head" style="color:#414141;">{{item.content}}</div>
+		    	<div class="detail" style="color:#414141;">{{item.description}}</div>
+		    </div>
+	
+	</ion-slide>
+</ion-slide-box>
+
+<div style="padding-bottom:13vh;;width:100vw; float:left;" >
+      		<div class="card bottom"  ng-repeat="item in homepageList | filter: { category: 'bottom' }">
+      			<div ng-click="slideClick(item.destId);">
+	            <img  src="{{item.url}}"  />
+	            <div class="detail" style="color:#414141;">{{item.description}}</div>
+	        	</div>
+        	</div>
+</div>
+
+</ion-content>
+
+
+<div>
+	<button class="button button-full button-positive" 
+	ng-click="$root.state.go('app.food');"
+	style="background-color:#33cd5f; border:0; position:fixed; bottom:0; margin:0; height:12.214vh; font-size:7vw;">
+	ORDER
+	</button>
+</div>
+
+</ion-view>

@@ -1,0 +1,48 @@
+<style>
+.profile-row{
+	width:100vw;
+	margin-top: 1vw;
+	  margin-bottom: 1vw;
+	  float:left;
+}
+</style>
+<ion-view view-title="Profile">
+ <ion-nav-buttons side="right">
+    <a ng-if="isEditing==-1" class="button" style="position: relative;" ng-click="clickEdit();">
+    	<div>EDIT</div>
+    </a>
+    <a ng-if="isEditing==1" class="button" style="position: relative;" ng-click="clickSave();">
+    	<div>SAVE</div>
+    </a>
+  </ion-nav-buttons>
+    <ion-content>
+	  <div>
+	  	<div class="list">
+	  	  <label class="item item-input">
+		    <span class="input-label" >Email</span>
+		    <input type="text" ng-model="userData.email" ng-disabled="true">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label" >First Name</span>
+		    <input type="text" ng-model="userData.firstName" ng-disabled="isEditing==-1">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Last Name</span>
+		    <input type="text" ng-model="userData.lastName" ng-disabled="isEditing==-1">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Mobile</span>
+		    <input type="text" ng-model="userData.phoneNumber" ng-disabled="isEditing==-1">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Password</span>
+		    <input type="password" ng-model="userData.password"  ng-disabled="isEditing==-1">
+		  </label>
+		  <button  style="margin-top:10px;margin-left:10px;" class="button button-clear button-positive" ng-click="clickLogout();">
+			 LOG OUT
+			</button>
+		</div>
+	  
+	  </div>
+    </ion-content>
+</ion-view>

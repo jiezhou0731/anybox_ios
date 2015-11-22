@@ -1,0 +1,206 @@
+#date-selector-footer {
+  height:  25.74vw; 
+  margin: 0;
+  padding: 0; 
+}
+
+#date-selector-scoll {
+  width: 100%;
+  height:  21.74vw; 
+  border-top: 2px solid gray;
+  padding: 0; }
+
+.date-selector {
+   height:  21.74vw; 
+  white-space: nowrap; 
+}
+  .date-selector > div {
+    /* Single date square */
+    position: relative;
+    display: inline-block;
+    width: 14.28571%;
+    height: 21.34vw; 
+  }
+  .date-selector .today {
+    position: absolute;
+    margin:0px;
+    width: 100%;
+    bottom: -0.5vw;
+    text-align: center;
+    font-size: 10px; 
+  }
+  .date-selector .date {
+    position: absolute;
+    margin:0px;
+    width: 100%;
+    bottom: 4.35vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6.52vw;
+  }
+  .date-selector .weekday {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.43vw;
+    font-style: normal;
+    top: 4vw;
+
+    /*line-height: 16px;*/ }
+ .date-selector .selected .weekday {
+background-color: #ff6f42;
+
+ }
+ .date-selector .selected .date {
+  background-color: #ff6f42;
+ }
+.date-selector .selected {
+  background-color: #ff6f42;
+  color: white; 
+}
+  .date-selector .selected .today {
+    background-color: #ff6f42;
+     color: white; 
+  }
+
+.food-card .item:first-child {
+  padding: 0; }
+.food-card img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px; }
+.food-card .number-picker {
+  float: right; }
+
+.scale-in {
+  transform: scale(0.9);
+  opacity: 0; }
+
+.scale-in.ng-enter, .scale-in > .ng-enter {
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms; }
+
+.scale-in.ng-enter-active, .scale-in > .ng-enter-active {
+  transform: scale(1);
+  opacity: 1; }
+
+.scale-in.ng-leave, .scale-in > .ng-leave {
+  transition: all ease-in-out 250ms; }
+
+.food-slide {
+  position: relative; }
+
+.food-image img {
+  object-fit: cover;
+  object-position: center;
+  height: 300px;
+  width: 100%; }
+
+.food-description {
+  margin: 0 10px;
+  padding: 10px;
+  background: #999;
+  min-height: 100px;
+  max-height: 150px;
+  color: white; }
+  .food-description .food-name {
+    font-size: 20px;
+    color: white; }
+
+.cart-button {
+  background: #FF832A;
+  color: white;
+  border: none;
+  height: 100%;
+  margin-left: 20px; }
+
+.match-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto; }
+
+.button.button-facebook {
+  border: none;
+  background-color: #3b5998;
+  color: #fff; }
+
+.button.button-twitter {
+  border: none;
+  background-color: #44ccf6;
+  color: #fff; }
+
+.button.button-googleplus {
+  border: none;
+  background-color: #d13f2d;
+  color: #fff; }
+
+.divider-text {
+  color: #ccc;
+  width: 70%;
+  margin: 20px auto;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.2em; }
+
+.divider-text:before, .divider-text:after {
+  content: "";
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 0.65em;
+  border-bottom: 1px solid #ccc;
+  margin: 0 2% 0 -55%; }
+
+.divider-text:after {
+  margin: 0 -55% 0 2%; }
+
+.bold-text {
+  margin: 5px 0 0;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #015c5e; }
+
+.qrcode {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px; }
+
+.inset-box {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%; }
+
+.empty-view {
+  width: 80%;
+  margin: 150px auto 0; }
+
+.empty-view p {
+  font-size: 2em;
+  text-align: center;
+  line-height: 30px;
+  color: #a0a0a0; }
+
+hr.divider {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.credit-card img {
+  height: 32px; }
+
+.credit-card span {
+  margin-left: 20px;
+  font-weight: bold; }
+
+.tabs-striped .tab-item.tab-item-active{
+    border-color: #ff6d3f;
+}

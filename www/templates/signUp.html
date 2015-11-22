@@ -1,0 +1,57 @@
+<ion-view  view-title="Sign Up">
+
+	<ion-nav-bar class="bar-balanced">
+	  <ion-nav-back-button>
+	  </ion-nav-back-button>
+	</ion-nav-bar>
+
+<style>
+.signup-input-item{
+  border: 0;
+  height:11.04vw;
+  font-size:4.35vw;
+  width:90vw;
+}
+.signup-input-item input{
+  border: 0;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 0px;
+  font-size:4.35vw;
+  padding-top: 1vw;
+  height:10.04vw;
+  width:90vw;
+}
+.signup-input-item-half{
+  float:left;
+  width:45vw;
+  margin-top:1px;
+}
+</style>
+
+<ion-content>
+<div class="list" style=" width:90vw; left:2.5vw; ">
+
+  <label class="item item-input signup-input-item" >
+    <input type="text" placeholder="Email" ng-model="loginData.email">
+  </label>
+
+  <label class="item item-input signup-input-item" >
+    <input type="text" placeholder="Mobile" ng-model="loginData.phoneNumber">
+  </label>
+
+  <label class="item item-input signup-input-item" >
+    <input type="password" placeholder="Password" ng-model="loginData.password">
+  </label>
+
+<label class="item item-input signup-input-item signup-input-item-half">
+    <input type="text" placeholder="First Name"  ng-model="loginData.firstName">
+  </label>
+
+<label class="item item-input signup-input-item signup-input-item-half" >
+    <input type="text" placeholder="Last Name" ng-model="loginData.lastName">
+  </label>
+</div>
+<button class="button button-full button-balanced" style="height: 15.22vw;float:left;border:0px;background-color:#33cd5f" ng-click="signUp()">Sign Up</button>
+</ion-content>
+
+</ion-view>
