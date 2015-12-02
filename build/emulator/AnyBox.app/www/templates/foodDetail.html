@@ -1,0 +1,99 @@
+<style>
+.red-ball {
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top: -10px;
+	right: -5px;
+	border-radius: 50%;
+	background-color: #ff6f42;
+}
+.red-ball-content{
+	margin-top:-3px;
+	margin-left: -1px;
+} 
+.red-spot{
+	height: 6px;
+	width: 6px;
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	border-radius: 50%;
+	background-color: #ff6f42;
+}
+.selected .red-spot {
+	background-color: white;
+}
+.date-selector > div{
+	width:18.21vw;
+}
+
+</style>
+<ion-view view-title="Item" style="background-color: white;">
+  <ion-nav-buttons side="right">
+    <a class="button" href="#/app/order" style="position: relative;">
+    	<div>CHECK OUT</div>
+	    <div class="red-ball" ng-hide="!$root.OrderManager.getItemNumber().total">
+	    	<div class="red-ball-content">{{$root.OrderManager.getItemNumber().total}}</div>
+	    </div>
+    </a>
+  </ion-nav-buttons>
+  <ion-header-bar id="date-selector-footer" style="margin-top:42px;z-index:100; border:none;height: 0px;">
+    <ion-scroll zooming="true" direction="x" scrollbar-x="false" id="date-selector-scoll" style="border:none;">
+      <div class="date-selector" style="border:none;">
+        <div ng-repeat="d in days" ng-class="{selected: d.selected}" ng-click="selectDateIndex($index);" style="border:none;">
+          <div class="red-spot" ng-hide="$root.OrderManager.getOrderStatusAtDate(d.dateObj)=='nothing'"></div>
+          <p class="today" ><span ng-if="$index == 0">Today<span></p>
+          <p class="date">{{d.date}}</p>
+          <p class="weekday">{{d.weekDayLabel}}</p>
+        </div>
+      </div>
+    </ion-scroll>
+  </ion-header-bar> 
+<style>
+.tab-nav{
+	margin-top:50px;
+}
+.amount{
+	float:left;margin-left:10px;color:#E87E04; 
+}
+.quantity{
+	float:left;
+}
+.detail-discription{
+	  position: absolute;
+  margin-top: 15vw;
+  margin-left: 4.35vw;
+  width: 90vw;
+  height: 20vw;
+}
+</style>
+      <ion-content style="top: 35vw; bottom: 0px; height: auto;padding-top:12vw;">
+        <div class="card food-card" ng-repeat="item in $root.OrderManager.orders[getSelectedDate()] | filter: { id: $root.foodDetailHtml.productId}" style="height:90.5vw;">
+          <div style="width:94vw;">
+            <img src="{{item.img4}}" ng-click="clickProductImage(item.id);" style="height:auto;width:100%;"/>
+          </div>
+          <div>
+          		<div style="margin-left:4.35vw;margin-top:0.35vw; float:left;height:10vh;overflow:visible;position:absolute;">
+          			<div>
+						<span style="color:gray;font-size:3.8vw;">was: 
+						<span style='text-decoration: line-through;'>${{item.originalPrice.toFixed(2)}}</span>
+					</div>
+					<div style=" margin-top:1vw;color:green; font-size:5.52vw;">
+						${{item.price.toFixed(2)}}
+					</div>
+				</div>
+				<div  style="float:left; font-size:5.43vw; margin-top:4.07vw; margin-left:28vw; overflow:visible;position:absolute; " class="quantity">	Quantity
+				</div>
+				<div  style="float:left; position:absolute;font-size:5.52vw;margin-top: 4.07vw;margin-left:50.5vw;" class="amount">{{item.amount}}</div>
+				<number-picker value="item.amount" storage="item.storage" class="number-picker" style="margin-right: 2.17vw;margin-top:0vw;"></number-picker>
+			</div>
+			<div class="detail-discription">
+					{{item.description}}
+			</div>
+          </div>
+          
+        </div>
+      </ion-content>
+   
+</ion-view>

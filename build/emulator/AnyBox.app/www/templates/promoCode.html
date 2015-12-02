@@ -1,0 +1,43 @@
+<ion-view  view-title="Input Promo Code">
+
+
+<style>
+.signup-input-item{
+  border: 0;
+  height:11.04vw;
+  font-size:4.35vw;
+  width:90vw;
+}
+.signup-input-item input{
+  border: 0;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 0px;
+  font-size:4.35vw;
+  padding-top: 1vw;
+  height:10.04vw;
+  width:90vw;
+}
+.signup-input-item-half{
+  float:left;
+  width:45vw;
+  margin-top:1px;
+}
+</style>
+
+<ion-content style="top: 60px; height: auto;" has-bouncing="false">
+<div class="list" style=" width:90vw; left:2.5vw; ">
+    <ul class="list">
+        <li class="item" ng-repeat="item in $root.OrderManager.freeLunchList" style="border:none;">
+            <div>Free Lunch up to ${{item.money.toFixed(2)}}</div> 
+            <div style="color:#E43384;">Expires at {{timestampToDate(item.expire)}}</div>
+        </li>
+    </ul>
+  <label class="item item-input signup-input-item" >
+    <input type="text" placeholder="Promo Code" ng-model="promocode">
+  </label>
+
+</div>
+<button class="button button-full button-balanced" style="height: 15.22vw;float:left;border:0px;background-color:#33cd5f" ng-click="sendPromoCode(promocode)" >Save</button>
+</ion-content>
+
+</ion-view>

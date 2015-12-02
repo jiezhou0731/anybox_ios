@@ -1,0 +1,60 @@
+<style>
+.avatar{
+position: absolute;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+</style>
+<div class="container">
+<ion-view view-title="Order History">
+   <ion-tabs class="tabs-default" >
+    <ion-tab title="By Pickup Date">
+       <ion-content style="top: 50px; bottom: 60px; height: auto;">
+		<div class="list card" ng-repeat="date in (getDates('pickupDate')) | orderBy : timestamp">
+			<div class="item">{{date}}</div>
+			<div class="item item-divider" ng-repeat="item in filteredItems  = ($root.OrderManager.historyOrder | filter: sameDateAs('pickupDate',date) )  ">
+					<div class="row">
+						<div class="col-xs-2">
+						<img class="avatar"  src="img/sample-salad.jpg" /> 
+						</div>
+						<div class="col-xs-5">
+							<span style="color:#F9690E;font-weight:bold;">{{item.productNumber}}</span>
+							<span>{{item.productName}}</span>
+							<br/> 
+							<span>Item Total: ${{item.productTotal}}   </span>
+						</div>
+						<div class="col-xs-5" style="float:right;padding-right:20px;">
+						</div>
+					</div>
+		  </div>
+		 </div>
+	   </ion-content>
+    </ion-tab>
+    <ion-tab title="By Order Date">
+       <ion-content style="top: 50px; bottom: 60px; height: auto;">
+		<div class="list card" ng-repeat="date in (getDates('orderDate')) | orderBy : timestamp">
+			<div class="item">{{date}}</div>
+			<div class="item item-divider" ng-repeat="item in filteredItems  = ($root.OrderManager.historyOrder | filter: sameDateAs('orderDate', date) )  ">
+					<div class="row">
+						<div class="col-xs-2">
+						<img class="avatar"  src="img/sample-salad.jpg" /> 
+						</div>
+						<div class="col-xs-5">
+							<span style="color:#F9690E;font-weight:bold;">{{item.productNumber}}</span>
+							<span>{{item.productName}}</span>
+							<br/> 
+							<span>Item Total: ${{item.productTotal}}   </span>
+						</div>
+						<div class="col-xs-5" style="float:right;padding-right:20px;">
+						</div>
+					</div>
+		  </div>
+		 </div>
+	   </ion-content>
+    </ion-tab>
+  </ion-tabs>
+</ion-view>
+</div>

@@ -1,0 +1,404 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ro",
+				"rootScope"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"rou",
+				"roundToCent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "order.html",
+			"settings":
+			{
+				"buffer_size": 5132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "food.html",
+			"settings":
+			{
+				"buffer_size": 4423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home.html",
+			"settings":
+			{
+				"buffer_size": 1228,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/number-picker/layout.html",
+			"settings":
+			{
+				"buffer_size": 289,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "foodDetail.html",
+			"settings":
+			{
+				"buffer_size": 3218,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/css/andrew.css",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/css/style.css",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/freeLunch.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/login.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/signUp.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/menu.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/signIn.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/home.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/food.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/foodDetail.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/css/style2.css",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/js/services.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/index.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/js/app.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/js/controllers.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/number-picker/directive.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/css/ionic.app.css",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/number-picker/layout.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/field-editor/layout.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/order.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/slide-box/directive.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/slidebox/slidebox.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/lib/toastr/toastr.js",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/templates/profile.html",
+		"/Volumes/NO NAME/home.html",
+		"/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/field-editor/directive.js",
+		"/Users/jie/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bold",
+			"class",
+			"margin-lef",
+			"bold",
+			"dd",
+			"#dd",
+			"card",
+			"(\"foodDetailHtml",
+			"HomeCtrl",
+			"$rootScope.foodDetailHtml=LocalSto",
+			"fooddetail",
+			"homeC",
+			"homeCtr",
+			"homeCtra",
+			"homePage",
+			"foodc",
+			"#date-selector-scoll",
+			"jquery",
+			"window",
+			"console",
+			"getProfile",
+			"signin",
+			"LocalStore",
+			"login",
+			"LocalStore",
+			"getProfile",
+			"ruser",
+			"login",
+			"amount",
+			"foodc",
+			"date-sele",
+			"22",
+			"0.3",
+			"18",
+			"height",
+			"tu",
+			"          \n",
+			"padding: 4.35vw;",
+			"14",
+			"orderc",
+			"round",
+			"total",
+			"isd",
+			" \n",
+			"g",
+			"value"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "order.html",
+					"settings":
+					{
+						"buffer_size": 5132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4977,
+								4958
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1773.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "food.html",
+					"settings":
+					{
+						"buffer_size": 4423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 227.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "home.html",
+					"settings":
+					{
+						"buffer_size": 1228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/jie/Documents/workspace/ionic/AnyboxHybrid/www/components/number-picker/layout.html",
+					"settings":
+					{
+						"buffer_size": 289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "foodDetail.html",
+					"settings":
+					{
+						"buffer_size": 3218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1745,
+								1745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1011.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/jie/Desktop/dumpling.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true
+}

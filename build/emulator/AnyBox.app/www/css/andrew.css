@@ -1,0 +1,160 @@
+.slider-pager {
+  bottom: 13px;
+}
+.number-picker{
+    float:left;
+    width:30vw
+  }
+  .controll-button{
+    font-size:9.78vw;
+    color:#ff6f42;
+    float:right;
+    margin-top:3vw;
+    margin-right:2vw;
+  }
+  .touchable{
+    width:14.13vw;
+    height:14.13vw;
+    float:right;
+  }
+.menu-head {
+	width: 80vw;
+	height: 20vh;
+	padding-left: 7vw;
+	padding-top: 7vh;
+	float: left;
+	font-size: 3vh;
+	margin-bottom: 5vh;
+}
+
+.menu-head .item-complex .item-content {
+  position: relative;
+  z-index: 2;
+  padding: 0px;
+  margin:0px;
+  width: 50vw;
+  border: none;
+  background-color: white;
+}
+
+.menu-head .ion-android-person:before {
+	font-size: 11vh;
+	float: left;
+}
+
+.menu-head .profile {
+	float: left;
+	padding-left: 7vw;
+	padding-top: 2vh;
+	width: 50vw;
+}
+
+.menu-head .profile .name{
+	margin-bottom: 2vh;
+}
+
+.menu-head .profile .my-account {
+	width: 50vw;
+	border: none;
+}
+
+.item-complex.item-icon-left .item-content {
+	font-size: 3vh;
+}
+
+.item-complex.item-icon-left .item-content {
+	font-size: 3vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 20vw;
+}
+
+.item-complex.item-icon-left {
+	padding-left: 5vw;
+	border: none;
+}
+
+.item-icon-left .icon:before,.item-icon-right .icon:before {
+	font-size: 4vh;
+}
+
+
+.home .upper {
+	margin: 3vw;
+	width: 94vw;
+	height: 84.6vw;
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
+.home .upper .head{
+  font-size: 6.52vw;
+  text-align: left;
+  padding-top: 2.35vw;
+  padding-left: 4.35vw;
+  text-align:left;
+}
+.home .upper .detail{
+  font-size: 4.35vw;
+  text-align: left;
+  padding-top: 2.10vw;
+  padding-left: 4.35vw;
+  text-align:left;
+}
+.home .bottom{
+	margin: 0px;
+	width:45.5vw; 
+	margin-left:3vw; 
+	float:left; 
+	padding:0px;
+}
+.home .bottom img{
+	width:45.5vw; 
+	height:45.5vw;
+}
+.home .bottom .detail{
+	height:15vw;
+	font-size: 3vh;
+	padding-top: 3.5vw;
+  	padding-left: 2vw;
+}
+.home .bottom-button{
+	margin:0px;
+	height: 13vh;
+	width:100vw;
+	font-size:6vh;  
+	font-weight:bold;
+	padding-top: 4vh;
+	border-color: #28a54c;
+  background-color: #33cd5f;
+  color: #fff;
+  text-align: center;
+}
+.home .foot{
+  margin: 0px;
+  padding: 0px;
+  height: 13vh;
+}
+
+.card {
+	padding:0px;
+}
+
+
+.tabs-top > .tabs, .tabs.tabs-top{
+	  padding-top:5vw;
+	  font-size:3.8vw;
+      height: 20.04vw;
+  	  border-top: solid 1px #ddd;
+}
+
+.tabs-striped .tab-item.tab-item-active{
+	  border-color: #ff6d3f;
+}
+.card, .list-inset{
+	margin: 10px 10px;
+}
+
+.date-selector .selected,.date-selector,#date-selector-footer {
+	border:none;
+}

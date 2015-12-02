@@ -1,0 +1,106 @@
+<style>
+.select-freelunch .item-radio .radio-icon {
+	padding-top: 19px;
+}
+.popup{
+	 background-color:white;
+}
+.popup-body {
+  padding: 0px;
+  max-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  background-color:white;
+}
+.popup-container .popup {
+	width:76.09vw;
+	max-height: 100vh;
+}
+.select-free-lunch label{
+	height:18.04vw;
+	font-size:4.35vw;
+}
+.select-row{
+	float:left;
+	height:13.04vw;
+	width:100%;
+}
+.select-tick{
+	float:left;
+	width:9.78vw;
+	position: absolute;
+	padding-top:1.43vw;
+	padding-left:2.43vw;
+	padding-bottom:2.43vw;
+	background-color: red;
+}
+.select-content{
+	padding-left:2vw;
+	font-size:4.35vw;
+	float:left;
+	position: absolute;
+	margin-left:11.39vw;
+}
+.ion-checkmark{
+	color:green;
+	height:auto;
+	font-size:6.79vw;
+}
+.ng-hide { display: none!important }
+.ng-hide { display: none!important }
+.select-freelunch .item{
+	border:none;
+}
+</style>
+<div class="select-freelunch">
+	<div style="font-size:5.43vw; padding:4.43vw; border-bottom: solid #dfdfdf 1px;">
+		<span>{{$root.OrderManager.freeLunchList.length}}</span>
+		Free Lunches
+	</div>
+	<div class="list">
+
+	  <label class="item item-radio">
+	    <input type="radio" ng-model="$root.OrderManager.freeLunchId" value="0" checked>
+	    <div class="item-content">
+	      <div>Don't use free lunch</div>
+	      <div> for this order.</div>
+	    </div>
+	    <i class="radio-icon ion-checkmark"></i>
+	  </label>
+	<label class="item item-radio" ng-repeat="item in $root.OrderManager.freeLunchList" >
+	    <input type="radio" ng-model="$root.OrderManager.freeLunchId" value="{{item.id}}">
+	    <div class="item-content">
+	      <div>Free lunch up to ${{item.money.toFixed(2)}}</div>
+		<div style="color:#E43384;">Expires {{timestampToDate(item.expire)}}</div>
+	    </div>
+	    <i class="radio-icon ion-checkmark"></i>
+	  </label>
+
+	</div>
+	<!--
+	<div>
+		<div class="select-row" ng-click="$root.OrderManager.freeLunchId=0;clickFreeLunch(0);">
+			<div class="select-tick">
+				<div  id="select_lunch_0" class="radio-icon icon ion-checkmark">
+				</div>
+			</div>
+			<div class="select-content">
+				Don't use free lunch for<br/> this order.
+			</div>
+		</div>
+
+		<div class="select-row" ng-repeat="item in $root.OrderManager.freeLunchList" ng-click="$root.OrderManager.freeLunchId=item.id;clickFreeLunch({{$index+1}});">
+			<div class="select-tick">
+				<div id="select_lunch_{{$index+1}}" class="radio-icon icon ion-checkmark">
+				</div>
+			</div>
+			<div class="select-content">
+				<div>Free lunch up to ${{item.money}}.</div>
+				<div style="color:#E43384;">Expires {{timestampToDate(item.expire)}}</div>
+			</div>
+		</div>
+
+		
+	</div>
+-->
+</div>
