@@ -5,18 +5,24 @@ angular.module('starter.controllers', ["app.services", "numberPicker","fieldEdit
 })
 
 .controller('LoginCtrl', function (LocalStore,$window, UserManager, Auth, Toast, $scope, $state, $ionicModal, $ionicPopup, $ionicLoading, $rootScope) {
- LocalStore.set("profile",{});
+ //LocalStore.set("profile",{});
  $scope.showSignIn = function(){
 	 $window.location.href = '#/signIn';
  }
  $scope.showSignUp = function(){
 	 $window.location.href = '#/signUp';
  }
+console.log("WWWWWWWWWWWWWWWWWWWW");
+ if (LocalStore.get("profile")!=undefined && LocalStore.get("profile").id!=undefined) {
+ 	console.log("DSFSDFSD");
+ $state.go("app.home");
+ }else {
+ 	console.log(LocalStore.get("profile"));
+ }
 })
 
 .controller('SignInCtrl', function (LocalStore,UserManager, Auth, Toast, $scope, $state, $ionicLoading, $rootScope) {
   $scope.loginData = {};
-  $scope.resetPassword = {};
 
   $scope.signIn = function () {
 	  console.log($scope.loginData.email);
@@ -350,6 +356,7 @@ console.log( $rootScope.foodDetailHtml.productId);
 	}
 
 	$scope.clickLogout = function(){
+		LocalStore.set("profile",{});
 	  	$ionicHistory.nextViewOptions({
 			  disableAnimate: true,
 			  disableBack: true
@@ -411,7 +418,7 @@ console.log( $rootScope.foodDetailHtml.productId);
                 body:       bodyText, // email body (for HTML, set isHtml to true) 
                 isHtml:    true, // indicats if the body is HTML or plain text 
             }, function () { 
-                console.log('email view dismissed'); 
+                console.log('Email view dismissed'); 
             }, 
             this);     
 	} 

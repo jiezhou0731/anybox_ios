@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EEA10EC15CE14FB18805E472A23F08E647CD8085",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EEA10EC15CE14FB18805E472A23F08E647CD8085" : 0,
+    "D7CAA883E6C2F0581A88EF4ECAA65A91D1C159FC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3E8CFEE3-DA39-4D17-A41D-978A2E8571EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EEA10EC15CE14FB18805E472A23F08E647CD8085" : "ios\/",
+    "D7CAA883E6C2F0581A88EF4ECAA65A91D1C159FC" : "..\/..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AnyBox",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AnyBox.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jiezhou0731\/AnyboxHybrid.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D7CAA883E6C2F0581A88EF4ECAA65A91D1C159FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jiezhou0731\/anybox_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EEA10EC15CE14FB18805E472A23F08E647CD8085"
+    }
+  ]
+}

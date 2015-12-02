@@ -49,6 +49,7 @@
 		B70E0A9020CA48269563234C /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5785F4C2625846D5BFCD6C08 /* IonicKeyboard.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F5DAD776FED04DFA8D22C4ED /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F91649F8957435D84E06E43 /* APPEmailComposer.m */; };
+		E722B5D3DCAE46C2BCE6FEF3 /* Sms.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74779BD94E46B7AC557B7E /* Sms.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		F8A48C6F7C494093A91B87DB /* UIWebViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewExtension.h; path = com.ionic.keyboard/UIWebViewExtension.h; sourceTree = "<group>"; };
 		F92B41E528664D89AACA094C /* IonicKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = com.ionic.keyboard/IonicKeyboard.h; sourceTree = "<group>"; };
 		FE457377144649EE827E3391 /* APPEmailComposerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APPEmailComposerImpl.h; path = "de.appplant.cordova.plugin.email-composer/APPEmailComposerImpl.h"; sourceTree = "<group>"; };
+		CE74779BD94E46B7AC557B7E /* Sms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Sms.m"; path = "com.cordova.plugins.sms/Sms.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		F36851AD78BF449584C908F9 /* Sms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sms.h"; path = "com.cordova.plugins.sms/Sms.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,8 @@
 				FE457377144649EE827E3391 /* APPEmailComposerImpl.h */,
 				CF6CAB76236545C7B0C1C2D7 /* CDVInAppBrowser.m */,
 				DEA088E597BD44E4B81F0D20 /* CDVInAppBrowser.h */,
+				CE74779BD94E46B7AC557B7E /* Sms.m */,
+				F36851AD78BF449584C908F9 /* Sms.h */,
 			);
 			name = Plugins;
 			path = AnyBox/Plugins;
@@ -442,6 +447,7 @@
 				F5DAD776FED04DFA8D22C4ED /* APPEmailComposer.m in Sources */,
 				6E93A2E2A16A49B6BAA6CC94 /* APPEmailComposerImpl.m in Sources */,
 				9DF89F6B465746A0A4EB6A28 /* CDVInAppBrowser.m in Sources */,
+				E722B5D3DCAE46C2BCE6FEF3 /* Sms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,6 +49,13 @@ module.exports = [
         "clobbers": [
             "window.open"
         ]
+    },
+    {
+        "file": "plugins/com.cordova.plugins.sms/www/sms.js",
+        "id": "com.cordova.plugins.sms.Sms",
+        "clobbers": [
+            "window.sms"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -60,7 +67,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "2.1.0",
     "cordova-plugin-whitelist": "1.0.0",
     "de.appplant.cordova.plugin.email-composer": "0.8.3dev",
-    "org.apache.cordova.inappbrowser": "0.6.0"
+    "org.apache.cordova.inappbrowser": "0.6.0",
+    "com.cordova.plugins.sms": "0.1.6"
 }
 // BOTTOM OF METADATA
 });
